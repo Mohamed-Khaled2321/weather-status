@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>
+    Name:Mohamed Khaled Abdelaal Ahmed        sunday and wensday 3:6
+    Assignment: 5 j.s
+  </title>
+</head>
+<body>
+
+
+
+
+
+
+
+
+    
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid ">
+            <a class="navbar-brand text-white d-flex" href="#">
+                <div class="fff d-flex">
+                    <div class="weht-img"><img src="./img/weth.png" class=""></div>
+                    <div class="weth-text">
+                        <span class=" fs-5">weather</span>
+                        <p >tagline goes here</p>
+                    </div>
+                  </div>
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;">
+              <li class="nav-item me-5">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item me-5 ">
+                <a class="nav-link" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link " href="#contact">Contact us</a>
+              </li>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+
+
+    <div id="home">
+      <div class="container">
+        <div class="find-location d-flex pt-5">
+          <input type="text" placeholder="Find your location" class="form-control bg-dark text-white" id="find" >
+          <button class="btn btn-primary my-2" >Find</button>
+        </div>
+      </div>
+
+      <div class="wether-table my-5 ">
+        <div class=" container ">
+          <div class="row g-0">
+            <div class="col-md-4 card-today  ">
+              <div class="head-card d-flex justify-content-between bg-primary text-white ">
+                <span id="today"></span>
+                <span id="dateToday"></span>
+              </div>
+              <h3 id="loc" class="pt-3 ps-2"></h3>
+              <div class="d-flex justify-content-between p-2">
+                <div class="pt-3">
+                  <div class=" d-flex degree text-white">
+                    <h1 id="today-degree" class="d-inline-block"></h1>
+                    <h1 class="d-inline-block"><sup>o</sup>C</h1>
+                  </div>
+                </div>
+                <div class="img-today">
+                  <img id="todayIcon">
+                </div>
+              </div>
+              <p id="today-description" class="text-primary ps-2"></p>
+              <div class="details ps-2">
+                <i class="fa-solid fa-umbrella "></i>
+                <span id="humdity"></span><span>%</span>
+                <i class="fa-solid fa-wind ps-2"></i>
+                <span id="wind"></span><span>km/h</span>
+                <i class="fa-solid fa-compass ps-2"></i>
+                <span id="compass"></span>
+              </div>
+            </div>
+            <div class="col-md-4 card-nextday text-center">
+                <p class="nextDay bg-black text-white"></p>
+                <img class="icon-nextday">
+                <div class="d-flex justify-content-center text-white pb-2">
+                  <h3 class="nextday-maxdegree" class="d-inline-block"></h3>
+                  <h3 class="d-inline-block"><sup>o</sup>C</h3>
+                </div>
+                <div class="d-flex justify-content-center text-white">
+                  <h3 class="nextday-mindegree" class="d-inline-block"></h3>
+                  <h3 class="d-inline-block"><sup>o</sup>C</h3>
+                </div>
+                <p class="nextday-description text-warning"></p>
+            </div>
+            <div class="col-md-4 card-nextnextday text-center">
+              <p class="nextDay bg-primary text-white"></p>
+              <img class="icon-nextday">
+              <div class="d-flex justify-content-center text-white">
+                <h3 class="nextday-maxdegree" class="d-inline-block"></h3>
+                <h3 class="d-inline-block"><sup>o</sup>C</h3>
+              </div>
+              <div class="d-flex justify-content-center text-white">
+                <h3 class="nextday-mindegree" class="d-inline-block"></h3>
+                <h3 class="d-inline-block"><sup>o</sup>C</h3>
+              </div>
+              <p class="nextday-description text-warning"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+
+    </div>
+    
+
+    <div class="demo  ">
+      <div class="container ">
+          <div class="row pt-5 ">
+              <div class="col-md-8  d-flex">
+                      <input type="email" placeholder="Enter your email to subscribe" class="form-control bg-dark"  >
+                      <button class="btn btn-primary my-2">Subscribe</button>
+              </div>
+              <div class="col-md-3 offset-1 social">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"></a><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"></a><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="#"></a><i class="fa-brands fa-pinterest"></i></a>
+              </div>
+              <div class="col-md-6 text-light my-4"><p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p></div>
+          </div>
+      </div>
+
+  </div>
+    
+    
+
+
+    
+
+    <div id="contact" class="contact-form">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid ">
+                <a class="navbar-brand text-white d-flex" href="#">
+                    <div class="fff d-flex">
+                        <div class="weht-img"><img src="./img/weth.png" class=""></div>
+                        <div class="weth-text">
+                            <span class=" fs-5">Company name</span>
+                            <p >tagline goes here</p>
+                        </div>
+                      </div>
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;">
+                  <li class="nav-item me-5">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item me-5">
+                    <a class="nav-link" href="#">News</a>
+                  </li>
+                  <li class="nav-item me-5 ">
+                    <a class="nav-link" href="#">Live cameras</a>
+                  </li>
+                  <li class="nav-item me-5">
+                    <a class="nav-link" href="#">Photos</a>
+                  </li>
+                  <li class="nav-item me-5">
+                    <a class="nav-link" href="#">Contact us</a>
+                  </li>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-md-12 text-white cont-icon pt-3 ps-4">
+                    <a href="#">Home</a><i class="fa-solid fa-arrow-right-long px-2"></i><span>contact</span>
+                </div>
+                <div class="col-md-5 cont-add text-light mt-5 position-relative">
+                    <div class="position-absolute mmm">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="ps-2">Company Name INC.</span>
+                    <p class="ps-4"> 2803 Avenue Street, Los Angeles</p>
+                    <a class="text-decoration-none" href="#"><i class="fa-solid fa-phone"></i> <span class="text-white ps-2 ">+20101980872</span></a>
+                    <a  class="text-decoration-none" href="#"><i class="fa-solid fa-envelope ps-4"></i> <span class="text-white ps-2">contact@company.com</span></a>
+    
+                    </div>
+                </div>
+    
+                <div class="col-md-6 mt-5 offset-1">
+                    <div class="head-contact">
+                        <h1>Contact us</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore ducimus, facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum. Nisi facilis odit hic, ipsum sed!</p>
+                    </div>
+                    <div class="form-contact">
+                        <div class="row gy-3">
+                            <div class="col-md-6">
+                                <input type="text" placeholder="YourName..." class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" placeholder="EmailAddress..." class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="CompanyName..." class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="url" placeholder="Website..." class="form-control">
+                            </div>
+                            <div class="col-md-12">
+                                <textarea class="form-control " placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-md-3 offset-9">
+                                <button class="btn btn-primary">Sumbuit</button>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="demo  ">
+            <div class="container ">
+                <div class="row pt-5 ">
+                    <div class="col-md-8  d-flex">
+                            <input type="email" placeholder="Enter your email to subscribe" class="form-control bg-dark"  >
+                            <button class="btn btn-primary my-2">Subscribe</button>
+                    </div>
+                    <div class="col-md-3 offset-1 social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"></a><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"></a><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#"></a><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                    <div class="col-md-6 text-light my-4"><p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p></div>
+                </div>
+            </div>
+    
+        </div>
+
+    </div>
+    
+
+
+
+     
+
+
+
+
+
+
+
+
+  <script src="./j.s/bootstrap.bundle.min.js"></script>
+  <script src="./j.s/script.js"></script>
+</body>
+</html>    
